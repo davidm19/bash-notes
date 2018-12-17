@@ -1,7 +1,7 @@
 # BASH SCRIPTING NOTES:
 ## Always first line of code: #!/bin/bash
 
-## basic commands
+### Basic Commands
 * print something: ```echo```
 * show contents of file: ```cat```
 * change file permissions: ```chmod```
@@ -12,11 +12,11 @@
 	* replace all spaces with hyphens
 	* sed 's/ /-/g' example.txt
 
-### variables:
+### Variables:
 * declaring variables: ```variable_name="value"```
 * accessing variable value: ```$variable_name```
 
-### conditionals:
+### Conditionals:
 * IF STATEMENTS:
 ```
 	if [ condition ]; then
@@ -60,7 +60,7 @@
 	* Not equal: ```!=```
 	* REMEMBER TO PUT VARIABLES IN QUOTES!
 
-### loops
+### Loops
 * FOR LOOPS:
 ```
 	for word in $paragraph
@@ -87,7 +87,7 @@
 	done
 ```
 
-### inputs
+### Inputs
 * assign input to a variable: ```read variable_name```
 * same thing but with a message: ```read -p "Message" variable_name```
 * external arguments inside a bash script: ```$1 $2, $3...```
