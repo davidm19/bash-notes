@@ -30,19 +30,12 @@
 
 * CASE STATEMENTS:
 ```
-	case EXPRESSION IN
-	case1)
-		action
-		;;
-	case2)
-		another action
-		;;
-	case3)
-		another action
-		;;
-	*)
-		default action
-		;;
+	case expression in
+	    pattern1 )
+		statements ;;
+	    pattern2 )
+		statements ;;
+	    ...
 	esac
 ```
 
@@ -59,13 +52,39 @@
 	* Equal: ```==```
 	* Not equal: ```!=```
 	* REMEMBER TO PUT VARIABLES IN QUOTES!
+	
+* FILE COMPARATORS:
+	* File exists: ```-a file```
+	* -d file         # file exists and is a directory
+	* -e file         # file exists; same -a
+	* -f file         # file exists and is a regular file (i.e., not a directory or other special type of file)
+	* -r file         # you have read permission
+	* -s file         # file exists and is not empty
+	* -w file         # you have write permission
+	* -x file         # you have execute permission on file, or directory search permission if it is a directory
+	* -N file         # file was modified since it was last read
+	* -O file         # you own file
+	* -G file         # file's group ID matches yours (or one of yours, if you are in multiple groups)
+
+	* file1 -nt file2     # file1 is newer than file2
+	* file1 -ot file2     # file1 is older than file2
 
 ### Loops
 * FOR LOOPS:
 ```
+	for x := 1 to 10 do
+	begin
+	  statements
+	end
+
 	for word in $paragraph
 	do
 		action	
+	done
+	
+	for (( initialisation ; ending condition ; update ))
+	do
+	  statements...
 	done
 ```
 
@@ -97,4 +116,19 @@
 	do
 		action
 	done
+```
+
+### Functions
+```
+function name() {
+    shell commands
+}
+```
+
+### Debug
+You can easily debug the bash script by passing different options to bash command. For example -n will not run commands and check for syntax errors only. -v echo commands before running them. -x echo commands after command-line processing.
+```
+	bash -n scriptname
+	bash -v scriptname
+	bash -x scriptname
 ```
