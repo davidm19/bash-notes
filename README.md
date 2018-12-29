@@ -86,6 +86,14 @@
 	do
 	  statements...
 	done
+	
+	# looping through a list
+	list_name ( item1 item2 item3 )
+	for item in "${list_name[@]}"
+	do
+		statements (e.g. echo "$item")
+	done
+	
 ```
 
 * WHILE LOOPS (keeps looping WHILE the provided condition is true):
