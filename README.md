@@ -13,11 +13,17 @@
 	* sed 's/ /-/g' example.txt
 * BONUS ROUND! The ```tar``` command:
 	* Create a tarball named TARBALL_NAME and put file FILE or directory DIR inside: ```tar -cf TARBALL_NAME.tar FILE``` or ```tar -cf TARBALL_NAME.tar DIR/```
-	* Uncompress tarball TARBALL: ```tar -xf TARBALL_NAME.tar``` (You can pass in a specific file/directory name to extract just the file/directory)
+	* Extract tarball TARBALL: ```tar -xf TARBALL_NAME.tar``` (You can pass in a specific file/directory name to extract just the file/directory)
 	* Tags (USE THESE IN CONJUNCTION WITH ```-f```):
 		* ```-v```: Verbose (specify each file that's being compressed/uncompressed)
 		* ```-r```: Append new files to an existing archive
 		* ```-t```: List files inside a tarball
+		* ```-z```: Create/Extract a tarball using ```gzip```
+		* ```-J```: Create/Extract a tarball using ```xz```
+	* In order to get the ```.xz```/```.gz``` suffixes, use the ```gzip``` or ```xz``` commands respectively (opposites are ```gunzip``` and ```unxz```) or just use the ```-z``` or ```-J``` tags (REMEMBER TO ZIP THINGS AFTER YOU'VE TAR-ED EVERYTHING!)
+		* ```gzip``` uses less memory but takes more time; ```xz``` takes less time but uses more memory
+		* Need to decompress on a machine with very limited memory (<32 MB) OR Need to decompress (with) minimal tools available: ```gzip```
+		* Want to save download time and/or bandwidth: ```xz```
 
 ### Variables:
 * declaring variables: ```variable_name="value"```
