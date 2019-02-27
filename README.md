@@ -20,10 +20,9 @@
 		* ```-t```: List files inside a tarball
 		* ```-z```: Create/Extract a tarball using ```gzip```
 		* ```-J```: Create/Extract a tarball using ```xz```
-	* In order to get the ```.xz```/```.gz``` file extensions, use the ```gzip``` or ```xz``` commands respectively (opposites are ```gunzip``` and ```unxz```) or just use the ```-z``` or ```-J``` tags (REMEMBER TO ZIP THINGS __AFTER__ YOU'VE ```tar```-ED EVERYTHING! AND REMEMBER TO __PUT EVERYTHING YOU WANT TO ZIP INSIDE A DIRECTORY__ BECAUSE IT'S EASIER THAT WAY)
-		* ```gzip``` uses less memory but takes more time; ```xz``` takes less time but uses more memory
-		* Need to decompress on a machine with very limited memory (<32 MB) OR Need to decompress (with) minimal tools available: ```gzip```
-		* Want to save download time and/or bandwidth: ```xz```
+	* In order to get the ```.xz```/```.gz``` file extensions, use the ```gzip``` or ```xz``` commands respectively (opposites are ```gunzip``` and ```unxz```) or just use the ```-z``` or ```-J``` tags (REMEMBER TO ZIP THINGS __AFTER__ YOU'VE ```tar```-ED EVERYTHING! AND REMEMBER TO __PUT EVERYTHING YOU WANT TO ZIP INSIDE A DIRECTORY__ BECAUSE IT'S EASIER THAT WAY):
+		* Archiving data/wrapping up a big project or something: ```xz``` (better compression ratios but uses more time and memory)
+		* Everything else: ```gzip``` (uses less time)
 
 ### Variables:
 * declaring variables: ```variable_name="value"```
