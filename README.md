@@ -13,8 +13,7 @@
 	* sed 's/ /-/g' example.txt
 * BONUS ROUND! The ```tar``` command:
 	* Create a tarball named TARBALL_NAME and put file FILE or directory DIR inside: ```tar -cf TARBALL_NAME.tar FILE``` or ```tar -cf TARBALL_NAME.tar DIR/```
-	* Uncompress tarball TARBALL: ```tar -xf TARBALL_NAME.tar```
-		* You can pass in a specific file/directory name to extract just the file/directory
+	* Uncompress tarball TARBALL: ```tar -xf TARBALL_NAME.tar``` (You can pass in a specific file/directory name to extract just the file/directory)
 	* Tags (USE THESE IN CONJUNCTION WITH ```-f```):
 		* ```-v```: Verbose (specify each file that's being compressed/uncompressed)
 		* ```-r```: Append new files to an existing archive
