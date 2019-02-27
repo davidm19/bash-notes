@@ -10,7 +10,7 @@
 * find lines matching a pattern: ```grep 'pattern' file_to_parse```
 * filter and transform text: ```sed```
 	* replace all spaces with hyphens
-	* sed 's/ /-/g' example.txt
+	* ```sed 's/ /-/g'``` example.txt
 * BONUS ROUND! The ```tar``` command:
 	* Create a tarball named TARBALL_NAME and put file FILE or directory DIR inside: ```tar -cf TARBALL_NAME.tar FILE``` or ```tar -cf TARBALL_NAME.tar DIR/```
 	* Extract tarball TARBALL: ```tar -xf TARBALL_NAME.tar``` (You can pass in a specific file/directory name to extract just the file/directory)
