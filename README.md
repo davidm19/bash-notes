@@ -148,4 +148,4 @@ function name() {
 ```
 -------------------------------------------------------------------------------------------------------
 # WE'RE DONE!
-## All credit goes to tldp.org, unix manpages, the Codecademy bash scripting course, and a StackOverflow answer about gzip vs. xz. Unfortunately I didn't keep tabs on every single source I used so I can't properly/formally cite them here.
+All credit goes to tldp.org, unix manpages, the Codecademy bash scripting course, and a StackOverflow answer about gzip vs. xz. Unfortunately I didn't keep tabs on every single source I used so I can't properly/formally cite them here.
