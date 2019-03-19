@@ -132,6 +132,7 @@
 * assign input to a variable: ```read variable_name```
 * same thing but with a message: ```read -p "Message" variable_name```
 * external arguments inside a bash script: ```$1 $2, $3...```
+* exit status of last command: ```$?```
 * in order to iterate over indefinite number of arguments:
 ```
 	for item in "$@"
