@@ -17,7 +17,7 @@
 	* Tags (USE THESE IN CONJUNCTION WITH ```-f```):
 		* ```-v```: Verbose (specify each file that's being compressed/uncompressed)
 		* ```-r```: Append new files to an existing archive
-		* ```-t```: List files inside a tarball (NOTE: IF YOU HAVE TARBALLS INSIDE TARBALLS FOR SOME WEIRD REASON, THOSE FILES WILL NOT BE LISTED, EVEN IF YOU TRY AND ACCESS A SPECIFIC TARBALL INSIDE ANOTHER; __HOWEVER__, YOU WILL BE ABLE TO SEE ALL FILES INSIDE OF DIRECTORIES IN A TARBALL)
+		* ```-t```: List files inside a tarball (NOTE: IF YOU HAVE TARBALLS INSIDE TARBALLS FOR SOME WEIRD REASON, THOSE FILES WILL NOT BE LISTED, EVEN IF YOU TRY AND ACCESS A SPECIFIC TARBALL INSIDE ANOTHER; __HOWEVER__, YOU WILL BE ABLE TO SEE ALL FILES INSIDE DIRECTORIES IN A TARBALL)
 		* ```-z```: Create/Extract a tarball using ```gzip```
 		* ```-J```: Create/Extract a tarball using ```xz```
 	* In order to get the ```.xz```/```.gz``` file extensions, use the ```gzip``` or ```xz``` commands respectively (opposites are ```gunzip``` and ```unxz```) or just use the ```-z``` or ```-J``` tags (REMEMBER TO ZIP THINGS __AFTER__ YOU'VE ```tar```-ED EVERYTHING! AND REMEMBER TO __PUT EVERYTHING YOU WANT TO ZIP INSIDE A DIRECTORY__ BECAUSE IT'S EASIER THAT WAY):
