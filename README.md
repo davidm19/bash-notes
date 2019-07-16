@@ -153,6 +153,11 @@ function name() {
     shell commands
 }
 ```
+
+### Bash script arguments (TODO)
+https://sookocheff.com/post/bash/parsing-bash-script-arguments-with-shopts/
+*TODO*
+
 -------------------------------------------------------------------------------------------------------
 ## WE'RE DONE!
 All credit goes to tldp.org, unix manpages, the Codecademy bash scripting course, [a blog post on redirection operators](https://www.brianstorti.com/understanding-shell-script-idiom-redirect/) and a StackOverflow answer about gzip vs. xz. Unfortunately I didn't keep tabs on every single source I used so I can't properly/formally cite them here.
